@@ -13,3 +13,58 @@
     background: gray;
     margin: auto;
 }
+
+header li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header-nav {
+    background: orange;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+
+.header-nav > a {
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.header-nav > a:hover {
+    text-decoration: underline;
+}
+
+/* header end */
+
+article {
+    outline: 2px solid red;
+    width: 80%;
+    margin: 30px auto;
+    background: #f3f3f3;
+    padding: 20px;
+}
+
+article > h2 {
+    background: lightblue;
+    margin-bottom: 20px;
+}
+
+.footer-blog {
+    background: lightblue;
+    margin-top: 20px;
+}
+
+/* main end */
+
+footer {
+    width: 100%;
+    background: orange;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}

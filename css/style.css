@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    background: #f3f3f3;
+}
+
+.wrapper {
+    width: 1024px;
+    background: gray;
+    margin: auto;
+}

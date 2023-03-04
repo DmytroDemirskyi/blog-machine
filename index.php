@@ -13,34 +13,67 @@
     <div class="container">
         <div class="wrapper">
 
+        <header>
+            <ul class="header-nav">
+               <a href=""><li>Home</li></a>
+               <a href=""><li>Abous us</li></a>
+               <a href=""><li>Projects</li></a>
+            </ul>
+        </header>
         
+        <main>
+
+
+        <article class="">
+            <h2>Header text</h2>
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+            </div>
+            <div class="footer-blog">
+                <p>22.10.2023</p> 
+            </div>
+        </article>
+
+        <article class="">
+            <h2>Header text</h2>
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+            </div>
+            <div class="footer-blog">
+                <p>22.10.2023</p> 
+            </div>
+        </article>
+
+        <article class="">
+            <h2>Header text</h2>
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
+            </div>
+            <div class="footer-blog">
+                <p>22.10.2023</p> 
+            </div>
+        </article>
 
 
 
 
+         </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <?php
-
-for($i = 0; $i < 100; $i++) {
-    echo "<p>". ($i + 1) ." - Hello World!</p>";
-    }    
-
-    ?>
-
-
-
+        <footer>
+            <p>&#169; Copyright</p>
+        </footer>
 
 
 
@@ -57,13 +90,7 @@ for($i = 0; $i < 100; $i++) {
 
 
     
-    <?php
-
-for($i = 0; $i < 100; $i++) {
-    echo "<p>". ($i + 1) ." - Hello World!</p>";
-    }    
-
-    ?>
+    
     
     
 </body>

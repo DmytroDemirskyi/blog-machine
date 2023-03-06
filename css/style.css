@@ -50,14 +50,22 @@ article {
 article > h2 {
     background: lightblue;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-blog {
     background: lightblue;
     margin-top: 20px;
+    text-align: center;
+}
+
+.footer-blog > p {
+    display: inline; 
+    margin-right: 50px; 
 }
 
 /* main end */
+
 
 footer {
     width: 100%;
@@ -68,3 +76,4 @@ footer {
     color: #ffffff;
     font-size: 20px;
 }
+

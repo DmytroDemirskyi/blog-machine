@@ -23,48 +23,51 @@
         
         <main>
 
+        <?php 
 
-        <article class="">
-            <h2>Header text</h2>
-            <div class="text-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-            </div>
-            <div class="footer-blog">
-                <p>22.10.2023</p> 
+        
+
+
+
+
+
+
+
+        
+        require('engine/connect_db.php');
+        require('engine/add_article.php');
+
+
+
+        $query = mysqli_query($db, 'SELECT * FROM `articles`');
+
+        $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
+
+        foreach($result as $article){
+            echo "
+            <article class=\"\">
+            <h2>".  $article['header'] ."</h2>
+            <div class=\"text-block\">" . $article['text'] . "</div>
+            <div class=\"footer-blog\">
+                <p> date: " . $article['date'] . "</p>
+                <p> Views: " . $article['views'] . "</p>  
+                <p>author: " . $article['author'] . "</p>
             </div>
         </article>
+            ";
+        }
+        
+        
+        
+        
+        
+        ?>
+
 
         <article class="">
-            <h2>Header text</h2>
-            <div class="text-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-            </div>
-            <div class="footer-blog">
-                <p>22.10.2023</p> 
-            </div>
+            	<?php echo $page1; ?>
         </article>
-
-        <article class="">
-            <h2>Header text</h2>
-            <div class="text-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit modi iusto inventore! Nam libero deleniti porro quo vero blanditiis earum voluptate. Atque ad tempora sint enim. Cum, sunt nesciunt!</p>
-            </div>
-            <div class="footer-blog">
-                <p>22.10.2023</p> 
-            </div>
-        </article>
+    
 
 
 

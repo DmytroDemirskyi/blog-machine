@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if($_SESSION['enter'] != 1){
+    echo "Не авторизован <a href=\"signin.php\"> Авторизоваться</a>";
+} else {
+    echo "Авторизован";
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +32,12 @@
                <a href=""><li>Abous us</li></a>
                <a href=""><li>Projects</li></a>
             </ul>
+            <div class="sign-in-status">
+                <form action="signin.php" method="post">
+                    <input type="hidden" name="sign-exit" value="1">
+                <button>exit</button>
+                </form>
+            </div>
         </header>
         
         <main>
@@ -37,7 +56,7 @@
         require('engine/connect_db.php');
         require('engine/add_article.php');
 
-
+    
 
         $query = mysqli_query($db, 'SELECT * FROM `articles`');
 
